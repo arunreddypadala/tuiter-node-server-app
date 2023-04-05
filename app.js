@@ -2,8 +2,9 @@ import express from 'express';
 import cors from 'cors'
 import mongoose from "mongoose";
 // mongoose.connect('mongodb://localhost:27017/tuiter');
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
-                          || 'mongodb://127.0.0.1:27017/tuiter'
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+//                           || 'mongodb://127.0.0.1:27017/tuiter'
+const CONNECTION_STRING = 'mongodb+srv://giuseppi:supersecretpassword@cluster0.tbm0dq3.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(CONNECTION_STRING);
 
 
